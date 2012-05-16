@@ -1,0 +1,2 @@
+recursive-include niteoweb *
+global-exclude *pyc

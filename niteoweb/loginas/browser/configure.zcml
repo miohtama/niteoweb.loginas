@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="niteoweb.loginas">
+
+    <browser:page
+        name="login-as"
+        for="*"
+        class=".login_as.LoginAs"
+        template="login_as.pt"
+        permission="cmf.ManagePortal"
+        />
+
+</configure>

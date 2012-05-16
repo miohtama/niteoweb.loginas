@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xml:lang="en" lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="niteoweb.loginas">
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+        <h2 i18n:translate="login_as_user">Login as user</h2>
+        <h5 i18n:translate="login_as_user_warning">This is a admin-only form for logging as other users. Please use it wisely.</h5>
+        <br />
+
+        <form method="post" tal:define="errors view/errors | nothing" tal:condition="view/is_dev_mode" action="@@login-as">
+            <div tal:define="error errors/user | nothing;
+                    user request/user | nothing;"
+                    tal:attributes="class python: error and 'field error' or 'field'">
+                <label i18n:translate="form_choose_user_label">Target user:</label>
+                <div tal:condition="error" i18n:translate="form_choose_error">User "<p tal:replace="error" i18n:name="from_choose_user"></p>" does not exist.</div>
+                <input name='user' id='user' type='text' size="30" tal:attributes="value user;" i18n:attributes="value"/>
+                <input name="login_as" type='submit' value='Login' i18n:attributes="value"/>
+            </div>
+        </form>
+
+        <table>
+            <tr><th i18n:translate="list_users_user">Available Users</th><th i18n:translate="list_users_fullname">Fullname</th></tr>
+            <tr tal:repeat="member view/members">
+                <td tal:content="member/username" />
+                <td tal:content="member/fullname" />
+            </tr>
+        </table>
+        <br />
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

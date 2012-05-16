@@ -1,0 +1,32 @@
+Changelog
+=========
+
+0.3 (unreleased)
+----------------
+
+- Support for Plone 4.1+
+  [naro]
+
+- Removed useless GenericSetup profile registration.
+  [naro]
+
+
+0.2 (2010-10-31)
+----------------
+
+  * Support for Plone 4.
+    [simahawk, zupo]
+  * Reviewed the i18n supports for generate new msgid
+    [macagua]
+  * Validated the templates source code using the updated script rebuild_i18n.sh
+    [macagua]
+  * Added documentation/information files on directory called "doc"
+    [macagua]
+
+
+0.1 (2009-10-05)
+----------------
+
+  * Initial release
+    [iElectric]
+

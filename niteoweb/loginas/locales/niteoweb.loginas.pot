@@ -1,0 +1,58 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-03-10 01:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: niteoweb.loginas\n"
+
+#. Default: "Login"
+#: ../browser/login_as.pt:23
+msgid "Login"
+msgstr ""
+
+#: ../browser/login_as.py:26
+msgid "You can login as another user only in Development mode."
+msgstr ""
+
+#. Default: "User \"${from_choose_user}\" does not exist."
+#: ../browser/login_as.pt:21
+msgid "form_choose_error"
+msgstr ""
+
+#. Default: "Target user:"
+#: ../browser/login_as.pt:20
+msgid "form_choose_user_label"
+msgstr ""
+
+#. Default: "Fullname"
+#: ../browser/login_as.pt:28
+msgid "list_users_fullname"
+msgstr ""
+
+#. Default: "Available Users"
+#: ../browser/login_as.pt:28
+msgid "list_users_user"
+msgstr ""
+
+#. Default: "Login as user"
+#: ../browser/login_as.pt:12
+msgid "login_as_user"
+msgstr ""
+
+#. Default: "This is a admin-only form for logging as other users. Please use it wisely."
+#: ../browser/login_as.pt:13
+msgid "login_as_user_warning"
+msgstr ""
+

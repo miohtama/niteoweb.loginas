@@ -22,12 +22,8 @@ class LoginAs(BrowserView):
         # Hide the editable-object border
         self.request.set('disable_border', True)
 
-        if not DevelopmentMode:
-            plone_utils = getToolByName(self.context, 'plone_utils')
-            plone_utils.addPortalMessage(_(u'You can login as another user only in Development mode.'), 'info')
-        else:
-            # Handle clicks
-            self.actions()
+        # Handle clicks
+        self.actions()
 
         return self.template()
 
